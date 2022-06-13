@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart.js</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <div class="pLeft">
+            <h2>Expense in the m onth</h2>
+            <form id="fmList">
+                <label>Value</label>
+                <input type="number" name="quant" id="quant">
+
+                <label>Month</label>
+                <input list="month" name="listMonth">
+                <datalist id="month">
+                    <option value="Jan"></option>
+                    <option value="Feb"></option>
+                    <option value="Mar"></option>
+                    <option value="Apr"></option>
+                    <option value="May"></option>
+                </datalist>
+
+                <button type="submit" id="bt">Submit</button>
+            </form>
+        </div>
+        <div class="pRight">
+            <canvas id="myChart"></canvas>
+        </div>
+    </main>
+
+    <script src="node_modules/chart.js/dist/chart.js"></script>
+
+    <script src="home.js"></script>
+</body>
+</html>
